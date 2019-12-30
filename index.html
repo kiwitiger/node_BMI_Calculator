@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8">
+    <title>BMI calculator | BMI計算機</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <meta name="description" content="計算並記錄您的 BMI" />
+    <meta name="keywords" content="BMI" />
+
+    <meta property="og:title" content="BMI calculator | BMI計算機" />
+    <meta property="og:description" content="計算並記錄您的 BMI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.hexbmicalculator.com" />
+    <meta property="og:image" content="image/BMICLogo.png" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+</head>
+<body>
+    <div class="wrap">
+        <div class="header" id="top">
+            <div class="logo">
+                <h1>BMI calculator | BMI 計算機</h1>
+            </div>
+            <div class="inputArea">
+                <label for="height">身高 cm</label>
+                <input type="text" id="height" placeholder="請輸入身高">
+                <label for="weight">體重 kg</label>
+                <input type="text" id="weight" placeholder="請輸入體重">
+            </div>
+            <a href="#" class="seeResult">看結果</a>
+            <div class="result">
+                <div>
+                    <p class="result-index"><span>BMI</span></p>
+                    <a href="#" class="result-tryAgain"><img src="images/icons_loop.png"></a>
+                </div>
+                <div class="result-status"></div>
+                <a href="#" class="result-save"><i class="far fa-save"></i></a>
+            </div>
+        </div>
+        <div class="content">
+            <h2>BMI 紀錄</h2>
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="footer">
+            <a href="#top"><img src="images/BMICLogo.png" alt="BMI calculator"></a>
+        </div>
+        <!--- modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-cancel">取消</button>
+                    <button type="button" class="modal-confirm">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>
